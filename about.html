@@ -1,52 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>about us page</title>
+<title>About Us</title>
+<!-- This links html to css stylesheet -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+  <!-- This makes the webpage to be responsive in small screens -->
+    <script>function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }</script>
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<div class="topnav" id="myTopnav">
+    <a href="index.html">Home</a> 
+    <a href="#" class="active">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="products.html">Products</a>
+    <a href="FAQ.html">FAQs</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<!-- This are headers which are given pals and find classes -->
+  <h2 class="pals">Paw Pals Animal Shelter</h2>
+  <p class="find">Find your furry friend today!</p>
 
-    <ul>
-        <li><a href="index.html">home</a></li> 
-        <li><a href="#">about us</a></li>
-        <li><a href="contact.html">contact us</a></li>
-        <li><a href="products.html">products</a></li>
-        <li><a href="FAQ.html">FAQs</a></li>
-        </ul>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+<body class="body">
 <hr>
-
-<center><h1><font size="16">  Paw Pals Animal Shelter</font></h1></center>
-<center><h2>Find your furry friends today!</h2></center>
-<hr>
-
-<center><img src="img/PAW PALS ANIMAL SHELTER LOGO.jpg" alt="Paw_Pals_Animal_Shelter_Logo" width="500" height="500"></img></center>
-
+<!-- This is a logo of Paw Pals Animal Shelter -->
+<center><img src="img/PAW PALS ANIMAL SHELTER LOGO.jpg" alt="Paw_Pals_Animal_Shelter_Logo" width="500" height="500"></center>
 
 <hr>
-<center><h2><font size="6">Who are we and what do we do?</font></h2></center>
+<!-- This explains our organisation -->
+<h2 class="labels" >Who are we and what do we do?</h2>
 <hr>
-<center><p><b><font size="6" >Paw Pals Animal Shelter</b> is a non-profit organization dedicated to rescue abused and neglected animals.
+<p class="intro"><b>Paw Pals Animal Shelter</b> is a non-profit organization dedicated to rescue abused and neglected animals.
 Our website aims to encourage adoptions, donations and educate the community members about animal care.
 Our website will target pet lovers, potentiel adopters, volunteers, donors and community members interested in 
-supporting animal welfare.</font></center></p>
+supporting animal welfare.Our mission is to provide a safe and loving environment for animals, and to help them find their forever families.</p>
 <br>
-<center><b><font size="6" > Our mission is to provide a safe and loving environment for animals, and to help them find their forever families.</font></center></b><br>
 <hr>
-<font size="6" ><center> <b> What exactly do we do?</b></center>
+<!-- This defines what our organisation does -->
+<h2 class="labels"> What exactly do we do?</h2>
     <hr>
-<center><ol></center>
-<center><li><b>Promote adoptions:</b></li><p> We are very determined to get homes for the pets that we have rescued. We even provide photos and videos to showcase adoptable animals.</center></p>
-<center><li><b>Encourage donations:</b></li><p> Donating now will help us provide care and support to animals in need. You can donate in person at our Paw Pals Animal Shelter. We also offer a trusted online donation system to help with animal care.</p></center>
-<center><li><b>Educate the community:</b></li><p> We will host events to educate the community about animal welfare and pet ownership.</p></center>
-<center></ol></center></font>
+
+<p class="labels"><b>1. Promote adoptions:</b><p class="find"> We are very determined to get homes for the pets that we have rescued.
+   We even provide photos and videos to showcase adoptable animals.</p>
+<p class="labels"><b>2. Encourage donations:</b><p class="find"> Donating now will help us provide care and support to animals in need.
+   You can donate in person at our Paw Pals Animal Shelter. We also offer a trusted online donation system to help with animal care.</p></center>
+<p class="labels"><b>3. Educate the community</b><p class="find"> We will host events to educate the community about animal welfare and pet ownership.</p>
+
 <p></p>
 
 <hr>
 
-<footer>
+
+<!-- This is a footer code-->
+<footer class="footer">
     <p>&Copf; 2025. All right reserved.
     </p>
 </footer>
 <hr>
 </body>
-
 </html>

@@ -1,44 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>products page</title>
+<title>Products</title>
+<!-- This links html to css stylesheet -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+  <!-- This makes the webpage to be responsive in small screens -->
+    <script>function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }</script>
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<div class="topnav" id="myTopnav">
+    <a href="index.html">Home</a> 
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="#" class="active">Products</a>
+    <a href="FAQ.html">FAQs</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
-    <ul>
-        <li><a href="index.html">home</a></li> 
-        <li><a href="about.html">about us</a></li>
-        <li><a href="contact.html">contact us</a></li>
-        <li><a href="#">products</a></li>
-        <li><a href="FAQ.html">FAQs</a></li>
-        </ul>
+<!-- This are headers which are given pals and find classes -->
+  <h2 class="pals">Paw Pals Animal Shelter</h2>
+  <p class="find">Find your furry friend today!</p>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+<body class="body">
+
 <hr>
+<!-- This is a logo of Paw Pals Animal Shelter -->
+<center><img src="img/PAW PALS ANIMAL SHELTER LOGO.jpg" alt="Paw_Pals_Animal_Shelter_Logo" width="500" height="500"></center>
 
-<center><h1><font size="16">  Paw Pals Animal Shelter</font></h1></center>
-<center><h2><font size="6">Find your furry friend today!</font></h2></center>
-
-<hr>
-
-<center><h1>Our Animals for adoption at Paw Pals Animal Shelter</h1></center>
 
 <hr>
-<center><h2>The pictures below shows Adoptable dogs</h2>
+<!-- This are pictures of adoptable dogs -->
+<h2 class="labels">The pictures below shows Adoptable dogs</h2>
 <img src="img/dogsincageinshelter.jpg" alt="dogsincageinshelter" width="300" height="300"> 
 <img src="img/dogsinanimalshelter.jpg" alt="dogsinanimalshelter" width="300" height="300">
 <img src="img/womanfeedingdogsinshelter.jpg" alt="womanfeedingdogsinshelter" width="300" height="300">
+<ul>
+  <li class="details">1. Molly 18 months old Male  </li>
+  <li class="details">2. Sparks 9 months old Male  </li>
+  <li class="details">3. Cleta 14 months old Female and her 6 months puppies </li>
+</ul>
 <br>
-<h2>The pictures below shows Adopted dogs</h2>
+<!-- This are pictures of adopted dogs from Paw Pals-->
+<h2 class="labels">The pictures below shows Adopted dogs</h2>
 <img src="img/manandwomanwiththeirdog.jpg" alt="manandwomanwiththeirdog" width="300" height="300">
-<img src="img/dogswiththeirownersinapark.jpg" alt="dogswiththeirownersinapark" width="300" height="300"></center>
+<img src="img/dogswiththeirownersinapark.jpg" alt="dogswiththeirownersinapark" width="300" height="300">
+<ul>
+  <li class="details">1. Tom 19 months old Male  </li>
+  <li class="details">2. Rick 27 months old Male  </li>
+</ul>
 
-<hr>
-
-<footer>
+<!-- This is a footer code-->
+<footer class="footer">
     <p>&Copf; 2025. All right reserved.
     </p>
 </footer>
 <hr>
-
 </body>
 
 </html>

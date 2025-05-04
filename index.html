@@ -1,44 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>home page</title>
+<title>Home</title>
+<!-- This links html to css stylesheet -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
 
-<ul>
-<li><a href="#">home</a></li> 
-<li><a href="about.html">about us</a></li>
-<li><a href="contact.html">contact us</a></li>
-<li><a href="products.html">products</a></li>
-<li><a href="FAQ.html">FAQs</a></li>
-</ul>
+<div class="topnav" id="myTopnav">
+    <a href="#" class="active">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="products.html">Products</a>
+    <a href="FAQ.html">FAQs</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
+<!-- This are headers which are given pals and find classes -->
+  <h2 class="pals">Paw Pals Animal Shelter</h2>
+  <p class="find">Find your furry friend today!</p>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+<!-- This makes the webpage to be responsive in small screens -->
+<body class="body">
+   <script>function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }</script> 
 
 <hr>
-
-<center><h1><font size="16">  Paw Pals Animal Shelter</font></h1></center>
-<center><h2>Find your furry friend today!</h2></center>
-<hr>
-<center><h3><font size="12"> Welcome to Paw Pals Animal Shelter!</font> </h></center>
-
-<hr>
-
+<!-- This is a logo of Paw Pals Animal Shelter -->
 <center><img src="img/PAW PALS ANIMAL SHELTER LOGO.jpg" alt="Paw_Pals_Animal_Shelter_Logo" width="500" height="500"></center>
 
 <hr>
-
-<center><p><font size="6"> Meet our variety of pets that were included in the pets of the month.
-     Adopt a pet today and give them a second chance at a happy life.<br>
-We have helped and rescued over 100 animals, Now they are in need of a home 
-and we believe that <b>YOU</b> can help these little furry animals and you can 
-have your own little furry friend!  </font></p></center>
-
-
+<!-- This is the introduction of the website -->
+<p class="intro">Welcome to <b>Paw Pals Animal Shelter</b>, where compassion meets care.
+     We are a dedicated team committed to rescuing, rehabilitating, and rehoming animals in need.
+      At Paw Pals, every paw matters — whether it is a playful puppy, a curious kitten,
+       or a senior companion looking for a second chance. Our mission is to provide a safe,
+     loving environment for animals while helping them find their forever homes.
+      Join us in making a difference, one paw at a time.</p>
 <hr>
-
-<footer>
+<!-- This is a footer code-->
+<footer class="footer">
     <p>&Copf; 2025. All right reserved.
-</p>
+    </p>
 </footer>
 <hr>
 </body>
