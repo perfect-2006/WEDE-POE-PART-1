@@ -1,3 +1,19 @@
+
+Contents:
+Contents:	1
+1.Organization Overview:	2
+2.Website Goals and Objectives:	3
+3.Proposed Website Features and Functionality:	4
+4.Design and user experience:	5
+5.Technical Requirements:	6
+6.Timeline and Milestone:	7
+7.Budget:	8
+8.Conclusion:	9
+9.References:	10
+Bibliography	10
+
+
+ 
 1.Organization Overview:
 	Name: Paw Pals Animal Shelter
 	Mission and vision: Paw Pals Animal Shelter is a non-profit organization dedicated to rescuing abused and neglected animals. Our website aims to encourage adoptions, donations and educating the community about animal care. (SAPCs, 2025)
@@ -19,7 +35,7 @@ This picture shows dog that are available for adoption.
 Figure 2X, M., 2022. dogs-in-animal-shelter. [Online]
  
 3.Proposed Website Features and Functionality:
-	Home page: An overview of the website’s aim. Welcome to  Pals Animal Shelter, where compassion meets care. We are a dedicated team committed to rescuing, rehabilitating, and rehoming animal in need. At Paw Pals, every paw matter whether it is a playful puppy, a curious kitten, or a senior companion looking for a second chance. Our mission is to provide a safe, loving environment for animals while helping them find their forever homes. Join us in making a difference, one paw at a time. (SAPCs, 2025)
+	Home page: An overview of the website’s aim. Welcome to Pals Animal Shelter, where compassion meets care. We are a dedicated team committed to rescuing, rehabilitating, and rehoming animal in need. At Paw Pals, every paw matter whether it is a playful puppy, a curious kitten, or a senior companion looking for a second chance. Our mission is to provide a safe, loving environment for animals while helping them find their forever homes. Join us in making a difference, one paw at a time. (SAPCs, 2025)
 	About Us page: History, mission and values of the organization. Pals Animal Shelter is a non-profit organization dedicated to rescue abused and neglected animals. Our website aims to encourage adoptions, donation and educate the community members about animal care. Our website will target pet lovers, potential adopters, volunteers, donors and community members interested in supporting animal welfare. (SAPCs, 2025)
 	Contact page: Contact information of the organization. We will display the following:
 	1. Trading hours
@@ -32,6 +48,8 @@ Figure 2X, M., 2022. dogs-in-animal-shelter. [Online]
 	3. Cleta 14 months old Female and her 6 months old puppies: Adoptable
 	4. Tom 19 months old Male: Adopted
 	5. Rick 27 months old Male: Adopted
+	6. There is now a lightbox gallery to show pictures in large images when tapped
+	7. The is also a new search box function that helps in effective use of the website
 	FAQ page: A list that will provide answers to common questions asked.
 	1. What type of animals do you adopt? Answer: We adopt all small animals, mostly dogs. (friends, 2025)
 	2. How to adopt animals from Paw Pals? Answer: Browser our adoptable page and choose the best suited and fill in the adoption form, then submit. (Hillspet, 2025)
@@ -96,7 +114,4 @@ Shallard, D. D. (n.d.). Website development: How long does it takes to develop a
 X, M. (2022). dogs-in-animal-shelter. Retrieved April 04, 2025, from https://www.pexels.com/photo/dogs-in-animal-shelter-12195433/
 X, M. (2022). woman-feedind-dogs-in-shelter. Retrieved April 04, 2025, from https://www.pexels.com/photo/woman-feeding-dogs-in-shelter-11683889/
 X, M. (2022). woman-feeding-dogs-in-shelter. Retrieved April 04, 2025, from https://www.pexels.com/photo/woman-feeding-dogs-in-shelter-11683889/
-
-
-
 
