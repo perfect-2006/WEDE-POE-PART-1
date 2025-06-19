@@ -1,91 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Contact Us</title>
-<!-- This links html to css stylesheet -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js"></script>
+    <script src="script/jquery-3.7.1.min.js"></script>
+
 
 </head>
 <body>
-<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<div class="topnav" id="myTopnav">
-    <a href="index.html">home</a> 
-    <a href="about.html">About Us</a>
-    <a href="#" class="active">Contact Us</a>
-    <a href="products.html">Products</a>
-    <a href="FAQ.html">FAQs</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
+
+    <h1>Paw Pals Animal Shelter</h1>
+    <h2>Meet your furry friends</h2>
+<!-- Top navigation bar -->
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="active" href="#">Contact</a>
+        <a href="products.html">Products</a>
+        <a href="faq.html">FAQs</a>
+
+      </div>
+
+    <!-- This is the logo website -->
+    <img src="img/PAW PALS ANIMAL SHELTER LOGO.jpg" alt="Paw_Pals_Animal_Shelter_Logo" width="300" height="300">
+    <main>
+
+        <h3>Operating hours</h3>
+         <ul>
+            <li>Weekdays: 8am - 5pm</li>
+            <li>Saturday: 8am - 12am</li>
+            <li>Sunday: 8am - 10am</li>
+        </ul>
+        <h3>How to contact us?</h3>
+        <ul>
+           <li>Call: 072 767 2521</li>
+           <li>Whatsapp: 072 767 2521</li>
+           <li>Email: pawpalsanimalshelter@icloud.com</li>
+       </ul>
+       <h3>Social media pages</h3>
+       <ul>
+          <li>Instagram: Paw_Pals_Animal_Shelter</li>
+          <li>YouTube: Paw_Pals_Animal_Shelter</li>
+          <li>Twitter: Paw_Pals_Animal_Shelter</li>
+      </ul>
+      <h3>Physical address</h3>
+         <ul>
+            <li>21 Voortrekker street</li>
+            <li>Mpumalanga</li>
+            <li>Mbombela</li>
+                
+        </ul>
+        <!-- This is the embedded map on the website that shows the exact location of the store -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2940.746779854252!2d30.97438037454446!3d-25.469570334456936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee84a046752d011%3A0xa578719ec8261961!2s11%20Bester%20St%2C%20Mbombela%20Central%2C%20Mbombela%2C%201201!5e1!3m2!1sen!2sza!4v1747652677574!5m2!1sen!2sza" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
 
 
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="Ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1,0">
+<link rel="stylesheet" href="css/style.css">
+<script defer src="script/script.js"></script>
 
-  <!-- This makes the webpage to be responsive in small screens -->
-<body class="body">
-    <script>function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }</script>
+<body>
+    <!-- This is the adoption form elements -->
+    <div class="container">
+        <form id="form" action="/">
+            <h1> Adoption form</h1>
+            <div class="input-control">
+                <label for="fullnames">Fullnames</label>
+                <input id="fullnames" name="fullname" placeholder="Fullname" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="gender">Gender</label>
+                <input id="gender" name="gender" placeholder="Gender" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="contacts">Contacts</label>
+                <input id="contacts" name="contacts" placeholder="Contacts" type="number">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="breed">Breed</label>
+                <input id="breed" name="breed" placeholder="Breed" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="address">Address</label>
+                <input id="address" name="address" placeholder="Address" type="text">
+                <div class="error"></div>
+            </div>
+            <button onclick="validate()" type="submit">Adopt</button>
+        </form>
+    </div>
 
-<!-- This is a logo of Paw Pals Animal Shelter -->
-<center><img src="img/PAW PALS ANIMAL SHELTER LOGO.jpg" alt="Paw_Pals_Animal_Shelter_Logo" width="500" height="300"></center>
-
-<hr>
-
-
-
-<!-- This are contact information -->
-<h2 class="labels" ><b>How to contact us?</h2>
-
-<p class="monday">Call us on: 072 767 2521</p>
-<p class="monday">Whatsapp us on: 072 767 2521</p>
-<p class="monday"> E-mail us on: pawpalsanimalshelter@gmail.com</p>
-
-<hr>
-<!-- This are trading hours at out store -->
-<h2 class="labels"><b>Operating Hours:</b></h2>
-
-
-    <p class="monday">Monday to Friday: 8am to 5pm</p>
-    <p class="monday">Saturday: 8am to 4pm</p>
-    <p class="monday"> Sunday: Closed</p>
-<hr>
-<!-- This are social media pages of our organisation -->
-<p class="labels"><b> Social Media Pages </b></p>
-
-<p class="monday">Instagram: Paw_Pals_Animal_Shelter</p>
-<p class="monday">YouTube: Paw_Pals_Animal_Shelter</p>
-<p class="monday">Twitter: Paw_Pals_Animal_Shelter</p>
-
-<hr>
- <!-- This is physical address of our organisation -->
-<p class="labels"> Physical address</p>
-<p class="monday">24 Marloth Street</p>
-<p class="monday">Mbombela</p>
-<p class="monday">Mpumalanga</p>
-<p class="monday">1201</p>
 <br>
+</body>
+<!-- This is the footer element -->
+<footer>
+    <p>Copyright &copy;2025 Designed by Perfect</p>
+</footer> 
 
-<hr>
-<!--This is a note! text -->
-<p class="title"> We looking forward to your feedback. </p>
-
-<hr>
-
-
-<!-- This is a footer code-->
-<footer class="footer">
-    <p>&Copf; 2025. All right reserved.
-    </p>
-</footer>
-<hr>
 
 </body>
 </html>

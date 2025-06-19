@@ -1,71 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Products</title>
-<!-- This links html to css stylesheet -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js"></script>
+    <script src="script/jquery-3.7.1.min.js"></script>
 </head>
 <body>
-  <!-- This makes the webpage to be responsive in small screens -->
-    <script>function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }</script>
-<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<div class="topnav" id="myTopnav">
-    <a href="index.html">Home</a> 
-    <a href="about.html">About Us</a>
-    <a href="contact.html">Contact Us</a>
-    <a href="#" class="active">Products</a>
-    <a href="FAQ.html">FAQs</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+
+    <h1>Paw Pals Animal Shelter</h1>
+    <h2>Meet your furry friends</h2>
+<!-- This is a navigation bar -->
+<div class="topnav">
+  <a href="#">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a class="active" href="products.html">Products</a>
+  <a href="faq.html">FAQs</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
 </div>
 
+    <img src="img/PAW PALS ANIMAL SHELTER LOGO.jpg" alt="Paw_Pals_Animal_Shelter_Logo" width="300" height="300">
+    <main>
 
 
-<body class="body">
+<!-- This is a lightbos gallery when picture are enlarged when tapped  -->
+    <h2 style="text-align:center">Lightbox</h2>
+    
+    <div class="row">
+      <div class="column">
+        <img src="img/womanfeedingdogsinshelter.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="img/manandwomanwiththeirdog.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="img/dogswiththeirownersinapark.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="img/dogsinanimalshelter.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+    </div>
+  <!-- This is the function of slideshow gallery -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="img/womanfeedingdogsinshelter.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="img/dogsincageinshelter.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="img/dogswiththeirownersinapark.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="img/manandwomanwiththeirdog.jpg" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+<!-- This enlages pictures on tap -->
+        <div class="column">
+          <img class="demo cursor" src="img/dogswiththeirownersinapark.jpg" style="width:100%" onclick="currentSlide(1)" alt="Dogs with their owners in a park">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/womanfeedingdogsinshelter.jpg" style="width:100%" onclick="currentSlide(2)" alt="Dogs at animal shelter">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/dogsincageinshelter.jpg" style="width:100%" onclick="currentSlide(3)" alt="Adopted dog">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/manandwomanwiththeirdog.jpg" style="width:100%" onclick="currentSlide(4)" alt="Man and woman with their dog">
+        </div>
+      </div>
+    </div>
+<!-- This is a footer element -->
+    <footer>
+        <p>Copyright &copy;2025 Designed by Perfect</p>
+    </footer>
 
-<hr>
-<!-- This is a logo of Paw Pals Animal Shelter -->
-<center><img src="img/PAW PALS ANIMAL SHELTER LOGO.jpg" alt="Paw_Pals_Animal_Shelter_Logo" width="500" height="300"></center>
+
+    <!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: gray;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+</style>
 
 
-<hr>
-<!-- This are pictures of adoptable dogs -->
-<h2 class="labels">The pictures below shows Adoptable dogs</h2>
-<img src="img/dogsincageinshelter.jpg" alt="dogsincageinshelter" width="300" height="300"> 
-<img src="img/dogsinanimalshelter.jpg" alt="dogsinanimalshelter" width="300" height="300">
-<img src="img/womanfeedingdogsinshelter.jpg" alt="womanfeedingdogsinshelter" width="300" height="300">
-<ul>
-  <p class="details">1. 18 months old Males  </p>
-  <p class="details">2. 9 months old Males  </p>
-  <p class="details">3. Cleta 14 months old Female and her 6 months puppies </p>
-</ul>
-<br>
-<!-- This are pictures of adopted dogs from Paw Pals-->
-<h2 class="labels">The pictures below shows Adopted dogs</h2>
-<img src="img/manandwomanwiththeirdog.jpg" alt="manandwomanwiththeirdog" width="300" height="300">
-<img src="img/dogswiththeirownersinapark.jpg" alt="dogswiththeirownersinapark" width="300" height="300">
-<ul>
-  <p class="details">1. Tom 19 months old Male  </p>
-  <p class="details">2. Rick 27 months old Male  </p>
-</ul>
-
-<!-- This is a footer code-->
-<footer class="footer">
-    <p>&Copf; 2025. All right reserved.
-    </p>
-</footer>
-<hr>
 </body>
-
 </html>
